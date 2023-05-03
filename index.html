@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form</title>
+        <link rel="stylesheet" href="stylesheet.css" >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body style="background-color: mintcream;">
+        <div class="header">
+            <h1 id="title">DOM FORM-TABLE</h1>
+            <p id="description">Create forms and table using dom</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 col-md-12 col-sm-12 col-lg-6  form-col">
+                    <form name="foodform" id="form">
+                          <div class="form-group">
+                            <span>Firstname</span><br>
+                            <input class="bar" id="first-name" type="text" name="firstname"  placeholder="Enter firstname" id="first-name" required><br>
+                            <span>Lastname</span><br>
+                            <input class="bar" id="last-name" type="text" Name="lastname"  placeholder="Enter Lastname" required><br>
+                            <span>Address</span><br>
+                             <textarea id="address" placeholder="Enter address" name="address"></textarea><br>
+                            <span>Pincode</span><br>
+                             <input class="bar" id="pincode" type="text" name="pincode"  placeholder="Enter Pincode" required><br>
+                             <div class="div-flex">
+                                 <div>
+                                    <span>Country</span><br>
+                                    <input class="location" type="text" name="country"  placeholder="Country" required>
+                                 </div>
+                                 <div>
+                                    <span>State</span><br>
+                                    <input class="location" id="state" type="text" name="state" placeholder="State" required><br>
+                                 </div>
+                             </div> 
+                           <div>
+                            <span>Gender</span><br>
+                            <input class="radio" type="radio" name="gender" value="Male" > Male
+                            <input class="radio" type="radio" name="gender" value="Female"  > Female
+                            <input class="radio" type="radio" name="gender"  value="Others"> Others<br>
+                           </div>
+                        
+                           <div >
+                            <span>Food Options</span><br>
+                           <input class="radio" type="checkbox" name="food"  value="Idli" >Idli
+                           <input class="radio" type="checkbox" name="food"  value="Poori" >Poori
+                           <input class="radio" type="checkbox" name="food" value="Chappathi">Chappathi
+                           <input class="radio" type="checkbox" name="food"  value="Dosa" >Dosa
+                           <input class="radio" type="checkbox" name="food"  value="Rice" >Rice<br>
+                           </div>
+                           
+                           <button id="submit" class="btn btn-primary">submit</button>
+                           <button id="reset" class="btn btn-primary" >reset</button>
+                           </div>
+                          
+                    </form>
+                            
+             </div>
+            
+                     <div class="col-12 col-md-12 col-sm-12 col-lg-6 table-col">
+                        <table id="table" class="table">
+                            <thead>
+                         <td>Firstname</td>
+                         <td>Lastname</td>
+                         <td>Address</td>
+                         <td>Pincode</td>
+                         <td>Gender</td>
+                         <td>Food</td>
+                         <td>State</td>
+                         <td>Country</td>
+
+                     </thead>
+                     <tbody id="tbody">
+                         
+
+                     </tbody>
+
+                 </table>
+                </div>
+            </div>
+              
+        </div>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+        <script src="script.js"></script>
+       
+    </body>
+</html>
